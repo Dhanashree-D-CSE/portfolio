@@ -5,7 +5,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import girlAvatar from "../assets/avatar.jpg";
 import Experience from "./Experience";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/resume.pdf";
 
 import Footer from "./Footer"; 
 
@@ -49,13 +49,13 @@ function Home() {
 
             {/* Added d-flex to align buttons to the left */}
             <div className="hero-action-btns d-flex mb-4">
-              <Button className="btn-teal px-4 py-2 me-3" onClick={() => setActiveView('experience')}>View My Work</Button>
+              <Button className="btn-teal px-4 py-2 me-3 rounded-0" onClick={() => setActiveView('experience')}>View My Work</Button>
               <a 
               href="/Resume.pdf" 
               download={resume}
               className="text-decoration-none"
             >
-              <Button className="btn-outline-teal px-4 py-2">
+              <Button className="btn-outline-teal px-4 py-2 rounded-0">
                 Download Resume
               </Button>
             </a>
@@ -65,10 +65,10 @@ function Home() {
               {/* <span className="hero-nav-btn" onClick={() => setShowProjects(true)}>
                 Projects
               </span> */}
-              <a className="hero-nav-btn" onClick={() => setActiveView('projects')}>Projects</a>
+              <a className="hero-nav-btn rounded-0" onClick={() => setActiveView('projects')}>Projects</a>
               {/* <a href="#other" className="hero-nav-btn">Other works</a> */}
-              <a href="#blogs" className="hero-nav-btn">Blogs</a>
-              <a className="hero-nav-btn" onClick={() => setActiveView('contact')}>Contact</a>
+              <a href="#blogs" className="hero-nav-btn rounded-0">Blogs</a>
+              <a className="hero-nav-btn rounded-0" onClick={() => setActiveView('contact')}>Contact</a>
             </div>
           </Col>
         </Row>
